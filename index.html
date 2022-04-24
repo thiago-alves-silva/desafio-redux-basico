@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 01 - React Básico</title>
+  <script src="js/immer.umd.production.min.js"></script>
+  <script src="js/redux.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="box">
+      <h1>Dados do Aluno</h1>
+      <ul>
+        <li>
+          <b>Nome: </b>
+          <span id="nome"></span>
+        </li>
+        <li>
+          <b>E-mail: </b>
+          <span id="email"></span>
+        </li>
+        <li>
+          <b>Tempo restante: </b>
+          <span id="tempoRestante"></span>
+        </li>
+        <li>
+          <b>Aulas completas: </b>
+          <span id="aulasCompletas"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="actions">
+      <div>
+        <h2>Curso</h2>
+        <div class="btn-group curso box">
+          <form id="formAula">
+            <input type="number" placeholder="ID da aula" min="1" max="4" value="1" required>
+            <button>Completar Aula</button>
+          </form>
+          <button id="completarCurso">Completar Curso</button>
+          <button id="resetar">Resetar Curso</button>
+        </div>
+      </div>
+      <div>
+        <h2>Aluno</h2>
+        <div class="btn-group aluno box">
+          <button id="incrementar">Incrementar Tempo</button>
+          <button id="reduzir">Reduzir Tempo</button>
+          <form id="formEmail">
+            <input type="email" placeholder="Novo e-mail" required>
+            <button>Alterar E-mail</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
